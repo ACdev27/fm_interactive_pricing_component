@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <main>
+    <div class="price-card__container">
+      <header class="price-card__header">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. <span>No credit card required.</span></p>
+        <!-- <p>Sign-up for our 30-day trial. No credit card required.</p> -->
+      </header>
+      <div class="price-card">
+        <div class="price">
+          <div class="price-card__views"><span>100K</span> Pageviews</div>
+          <div class="price-card__price">$<span class="price-card__price-amount">16.00</span> <span class="price-card__price-period"> / month</span></div>
+          <div class="price-card__slider">
+            <input type="range" id="price-slider" min="1" max="5" step="1" value="3">
+          </div>
+        </div>
+        <div class="price-card__toggle">
+          <div>Monthly Billing</div>
+          <div class="price-card__toggle-switch"><div></div></div>
+          <!-- <div>Yearly Billing<span>25% <span class="price-card__toggle-discount">discount</span></span></div> -->
+          <div>Yearly Billing<span>25% <i>discount</i></span></div>
+
+
+        </div>
+
+        <div class="price-card__footer">
+          <ul>
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
+          <button>Start my trial</button>
+        </div> 
+      </div>
+    </div>
+  </main>
+
+ 
+
+  
+  <!-- <label for="points">Points (between 0 and 10):</label>
+  <input type="range" id="points" name="points" min="0" max="10">  -->
+
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/ACdev27">ACdev27</a>. 
+    </div>
+  </footer>
+
+</body>
+</html>
