@@ -49,13 +49,16 @@ body {
   background: var(--main-bg) url('images/bg-pattern.svg') no-repeat top center;
   background-size: 100% 62%;
 }
+button {
+  cursor: pointer;
+}
 .price-card__container {
   max-width: 1440px;
   margin: 0px auto;
   padding: 0 24px;
 }
 .price-card__header {
-  margin-top: 75px;
+  margin-top: 55px;
   padding: 30px 0px;
   background: url('images/pattern-circles.svg') no-repeat top center;
 }
@@ -169,14 +172,12 @@ input[type=range]::-webkit-slider-thumb:hover {
 input[type=range]::-webkit-slider-thumb:active {
   background-color: var(--slider-thumb-active);
   border: 1px solid var(--slider-thumb-active);
+  cursor: grabbing;
 }
 
-
-
-
-input[type=range]:focus::-webkit-slider-runnable-track {
+/* input[type=range]:focus::-webkit-slider-runnable-track {
   background: rgb(255, 173, 173);
-}
+} */
 
 /* Firefox Browser */
 input[type=range]::-moz-range-track {
@@ -191,12 +192,13 @@ input[type=range]::-moz-range-progress {
   height: 7px;
   border-radius: 5px;
 }
-input[type=range]:focus::-moz-range-track {
+
+/* input[type=range]:focus::-moz-range-track {
   background-color: rgb(255, 173, 173);
 }
 input[type=range]:focus::-moz-range-progress {
   background-color: rgb(255, 173, 173);
-}
+} */
 
 input[type=range]::-moz-range-thumb {
   height: 40px;
@@ -218,6 +220,7 @@ input[type=range]::-moz-range-thumb:hover {
 input[type=range]::-moz-range-thumb:active {
   background-color: var(--slider-thumb-active);
   border: 1px solid var(--slider-thumb-active);
+  cursor: grabbing;
 }
 
 
@@ -249,6 +252,9 @@ input[type=range]::-ms-thumb {
   background: #ffffff;
   cursor: pointer;
   box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+}
+input[type=range]::-ms-thumb:active {
+  cursor: grabbing;
 }
 input[type=range]:focus::-ms-fill-lower {
   background: #3071a9;
@@ -293,23 +299,35 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .price-card__toggle-switch {
+  position: relative;
   width: 43px;
   height: 22px;
   padding: 4px;
   background-color: var(--toggle-bg);
   border-radius: 15px;
+  cursor: pointer;
   transition: background-color 250ms;
 }
 .price-card__toggle-switch:hover {
   background-color: var(--toggle-bg-hover);
 }
-
 .price-card__toggle-switch div {
+  position: absolute;
   width: 14px;
   height: 14px;
   background-color: var(--white);
   border-radius: 50%;;
+  transition: left 300ms;
 }
+.price-card__toggle-switch--monthly div {
+  left: 5px;
+}
+.price-card__toggle-switch--yearly div {
+  left: 24px;
+}
+
+
+
 
 .price-card__footer {
   display: flex;
@@ -424,12 +442,12 @@ footer {
   }
   .price-card__footer {
     flex-direction: column;
-    margin-top: 42px;
+    margin-top: 40px;
     margin-bottom: 32px;
   }
   .price-card__footer ul {
     width: 100%;
-    margin-bottom: 22px;
+    margin-bottom: 14px;
     text-align: center;
   }
 
