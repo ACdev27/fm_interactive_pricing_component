@@ -15,6 +15,7 @@ let toggle = document.querySelector('.price-card__toggle-switch');
 document.addEventListener('DOMContentLoaded', () => {
   rangeSlider.value = 3;
   toggle.classList.add('price-card__toggle-switch--monthly');
+  toggle.getAttribute("aria-pressed") == "false";
 });
 
 // Add Event handler for range slider
@@ -22,6 +23,9 @@ rangeSlider.addEventListener('change', rangeChange);
 
 // Add event handler for toggle
 toggle.addEventListener('click', toggleClick);
+
+//  Add event listener for keypress - for toggle
+toggle.addEventListener('keydown', toggleKeyDown);
 
 // Set pageviews display based on range slider position (5 steps)
 function rangeChange() {
@@ -55,13 +59,40 @@ function rangeChange() {
   }
 }
 
+
+function toggleKeyDown(e) {
+  console.log("toggle focus and key pressed");
+  e.preventDefault();
+  if (e.key == " " || e.key == "Enter") {
+    toggleClick();
+  }
+
+}
+
+
 function toggleClick() {
   toggle.classList.toggle('price-card__toggle-switch--monthly');
   toggle.classList.toggle('price-card__toggle-switch--yearly')
+  toggleAriaPressed();
   
   // Update price when billing period changed
   updatePrice();
 }
+
+
+// Update ARIA pressed state for toggle switch button
+function toggleAriaPressed() {
+
+  console.log("toggleAriaPressed() called");
+
+  // Set aria-pressed state to opposite state
+  if (toggle.getAttribute("aria-pressed") == "false") {
+    toggle.setAttribute("aria-pressed", "true");
+  } else {
+    toggle.setAttribute("aria-pressed", "false");
+  }
+}
+
 
 function getPrice(price) {
   // Get state of billing toggle switch. true if monthly. false if yearly
