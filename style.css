@@ -21,20 +21,6 @@
   --toggle-shadow: hsla(174, 100%, 50%, 0.6)
 }
 
-/*
-padding: 2.5% 3.1%;
-
-
-
-price
-
-price-card__toggle
-
-
-*/
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -180,10 +166,6 @@ input[type=range]::-webkit-slider-thumb:active {
   cursor: grabbing;
 }
 
-/* input[type=range]:focus::-webkit-slider-runnable-track {
-  background: rgb(255, 173, 173);
-} */
-
 /* Firefox Browser */
 input[type=range]::-moz-range-track {
   width: 100%;
@@ -197,13 +179,6 @@ input[type=range]::-moz-range-progress {
   height: 7px;
   border-radius: 5px;
 }
-
-/* input[type=range]:focus::-moz-range-track {
-  background-color: rgb(255, 173, 173);
-}
-input[type=range]:focus::-moz-range-progress {
-  background-color: rgb(255, 173, 173);
-} */
 
 input[type=range]::-moz-range-thumb {
   height: 40px;
@@ -227,7 +202,6 @@ input[type=range]::-moz-range-thumb:active {
   border: 1px solid var(--slider-thumb-active);
   cursor: grabbing;
 }
-
 
 /* Edge Browser */
 input[type=range]::-ms-track {
@@ -267,7 +241,6 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: #367ebd;
 }
-
 
 .price-card__toggle {
   display: flex;
@@ -334,8 +307,6 @@ input[type=range]:focus::-ms-fill-upper {
   border: 1px dashed red;
 }
 
-
-
 .price-card__footer {
   display: flex;
   flex-direction: row;
@@ -371,7 +342,6 @@ input[type=range]:focus::-ms-fill-upper {
 .price-card__footer button:hover {
   color: #ffffff;
 }
-
 
 footer {
   margin-top: 25px;
@@ -457,9 +427,6 @@ footer {
     margin-bottom: 14px;
     text-align: center;
   }
-
-
-
 
 }
 
