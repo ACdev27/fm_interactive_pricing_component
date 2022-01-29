@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Add Event handler for range slider
-rangeSlider.addEventListener('change', rangeChange);
+rangeSlider.addEventListener('input', rangeChange);
 
 // Add event handler for keypress - range slider container
 rangeSliderContainer.addEventListener('keydown', rangeKeyDown)
