@@ -33,7 +33,7 @@ toggle.addEventListener('click', toggleClick);
 //  Add event listener for keypress - for toggle
 toggle.addEventListener('keydown', toggleKeyDown);
 
-// Handle input for range slier from arrow left/right & space/enter
+// Handle input for range slider from arrow left/right & space/enter
 function rangeKeyDown(e) {
   let rangeNumber = rangeSlider.valueAsNumber;
   
