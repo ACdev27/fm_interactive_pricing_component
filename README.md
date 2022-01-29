@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/pricing-component-with-toggle-y5pgG1Jhk)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/interactive-pricing-component-built-with-grid-flexbox-bem-lsupir5WE)
 - Live Site URL: [Live site URL here](https://musing-williams-d35053.netlify.app/)
 
 ## My process
