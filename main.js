@@ -5,7 +5,7 @@ let pageviews = document.querySelector('.price-card__views span');
 // Reference to price text element
 let price = document.querySelector('.price-card__price-amount');
 
-// Referenc3e to range slider container
+// Reference to range slider container
 let rangeSliderContainer = document.querySelector('.price-card__slider');
 
 // Reference to range slider

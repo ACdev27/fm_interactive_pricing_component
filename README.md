@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-How to work with range type input elements and cross-browsers styling of those elements. Adding accessible keyboard control to the range input and the custom toggle UI element.
+How to work with range type input elements and cross-browser styling of those elements. Adding accessible keyboard control to the range input and the custom toggle UI element.
 
 ## Author
 
